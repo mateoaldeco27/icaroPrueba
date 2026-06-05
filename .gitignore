@@ -3,5 +3,6 @@ img_cache
 *.txt
 background.jpg
 css/style.css
+node_modules/
 
 
