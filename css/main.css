@@ -1,0 +1,558 @@
+@charset "UTF-8";
+/* estilos generales*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background-color: #000103;
+  border: 1px solid #515052;
+  margin: 5px;
+  padding: 0px;
+}
+header #btnMenu, header label {
+  display: none;
+}
+header .logoMenu {
+  display: none;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 20px;
+  align-items: center;
+  margin-bottom: 0px;
+}
+header nav ul img {
+  width: 150px;
+}
+header nav ul li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #FFFFFA;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+}
+header nav ul li a:hover {
+  text-decoration: underline #FFFFFA;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 20px;
+    align-items: center; /* Esto ya lo tenés, pero asegurate de que no se sobreescriba */
+    margin-bottom: 0px;  /* Reseteamos márgenes que puedan molestar */
+}
+
+/* Ajuste específico para el logo central */
+header nav ul .logoUl {
+    display: flex;         /* Hacemos que el li sea flex */
+    align-items: center;   /* Centramos la imagen dentro del li */
+    justify-content: center;
+    margin: 0;             /* Quitamos márgenes heredados del h1 si lo estás usando */
+}
+
+header nav ul .logoUl img {
+    width: 150px;
+    height: auto;          /* Mantenemos proporción */
+    display: block;        /* Evitamos el espacio extra de los elementos inline */
+}
+
+
+.mainIndex {
+  background-color: #000103;
+}
+.mainIndex.mainIndex {
+  background-color: #000103;
+  border: 1px solid #515052;
+  margin: 5px;
+}
+.mainIndex .positionRelative {
+  height: 600px;
+  position: relative;
+  background-color: #000103;
+  border: 1px solid #FFFFFA;
+}
+.mainIndex .positionRelative img {
+  display: block;
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+  margin: auto;
+  top: 100px;
+}
+.mainIndex section div.positionAbsolute {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  color: #FFFFFA;
+  text-decoration: none;
+  height: 50px;
+  width: 20vw;
+  background-color: #000103;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainIndex .positionAbsolute a {
+  text-decoration: none;
+  color: #FFFFFA;
+}
+.mainIndex .card {
+  width: 100%;
+  height: 400px;
+  display: inline-block;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 10px 15px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.mainIndex .card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.mainIndex .card div {
+  height: 100%;
+  text-align: center;
+}
+.mainIndex #carouselExampleCaptions {
+  background: #000103;
+  margin: 5px #FFFFFA;
+  max-width: 600px; /* Ajusta el tamaño máximo del carrusel */
+  margin: auto; /* Centra el carrusel horizontalmente */
+}
+.mainIndex #carouselExampleCaptions .carousel-item img {
+  max-width: 100%; /* Hace que las imágenes se adapten al ancho del contenedor */
+  height: 100%; /* Mantener altura al 100% del contenedor */
+  object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+}
+
+.contenedorCarrito {
+  display: grid;
+  background-color: #FFFFFA;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.contenedorCarrito .contenedorCompras {
+  display: grid;
+  background-color: #515052;
+  width: 80vw;
+  justify-content: center;
+  padding: 30px;
+  border: 5px solid #000103;
+}
+.contenedorCarrito .contenedorAyuda {
+  margin: 0 auto;
+}
+.contenedorCarrito h1, .contenedorCarrito h2, .contenedorCarrito h3 {
+  color: #FFFFFA;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+}
+.contenedorCarrito .botonCompras {
+  display: inline-flex;
+  color: #FFFFFA;
+  text-decoration: none;
+  height: 50px;
+  width: 30vw;
+  background-color: #000103;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  line-height: 0.8rem;
+  border: 2px solid #FFFFFA;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Estilos para la sección de notas en el Carrito */
+.notas-pedido {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #000103; /* Fondo negro como tu header */
+    border: 1px solid #515052;
+    text-align: left;
+}
+
+.notas-pedido h3 {
+    margin-bottom: 15px;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-area input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #515052;
+}
+
+.boton-agregar {
+    background-color: #FFFFFA;
+    color: #000103;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+#taskList li {
+    background-color: #515052; /* Gris como tu footer */
+    color: #FFFFFA;
+    padding: 10px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo para cuando hacés clic en la nota (marcar como lista) */
+.completada span {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.btn-borrar {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.faqStyle {
+  padding: 30px;
+  margin: 10px;
+  font-size: 20px;
+  color: #FFFFFA;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  background-color: #000103;
+  height: 100%;
+  width: 100%;
+}
+.faqStyle .block {
+  display: block;
+}
+.faqStyle .botonSuscribirse {
+  display: block;
+  margin-top: 7px;
+  color: #000103;
+  text-decoration: none;
+  background-color: #FFFFFA;
+  border-radius: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  height: 40px;
+}
+.faqStyle .style {
+  text-decoration: underline;
+}
+
+.drop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+}
+.drop .drop1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.contenedorShop {
+  display: grid;
+  background-color: #FFFFFA;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.contenedorShop .grilla {
+  background-color: #FFFFFA;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  border: 3px solid #000103;
+  display: grid;
+  grid-template-rows: 1fr 0.5fr;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorShop .grilla .producto {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorShop .grilla .precios {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-family: 10vw;
+}
+.galeria-container { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.imagen-principal img { width: 400px; height: 400px; object-fit: cover; border: 2px solid #515052; }
+.miniaturas { display: flex; gap: 5px; }
+.thumb { width: 80px; height: 80px; cursor: pointer; opacity: 0.6; transition: 0.3s; }
+.thumb:hover { opacity: 1; border: 1px solid #FFFFFA; }
+
+.usuarioStyle {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 30px;
+  margin: 10px;
+  font-size: 20px;
+  color: #FFFFFA;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  background-color: #000103;
+  height: 100%;
+  width: 100%;
+}
+.usuarioStyle .olvidarContraseña {
+  height: 15px;
+  width: 100%;
+  font-size: 10px;
+  text-align: right;
+}
+.usuarioStyle .inicioSesion {
+  height: 30px;
+  width: 100%;
+  justify-items: center;
+}
+.usuarioStyle .crearCuenta {
+  width: 100%;
+  font-size: 10px;
+  text-align: center;
+}
+
+footer {
+  border: 1px solid #515052;
+  margin: 5px;
+  height: 100px;
+  width: 100%;
+  text-decoration: none;
+  background-color: #515052;
+}
+footer .contenido {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  color: #FFFFFA;
+  text-align: center;
+  text-decoration: none;
+}
+footer .copyright {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  color: #FFFFFA;
+  text-align: center;
+  text-decoration: none;
+  background-color: #515052;
+}
+footer .contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #FFFFFA;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  background-color: #515052;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+footer .contacto li {
+  display: inline-block;
+  width: 10%;
+}
+footer .contacto li img {
+  width: 60%;
+  height: 60%;
+}
+
+@media (max-width: 1024px) {
+  .contenedorShop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 50px;
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .positionRelative {
+    z-index: 1;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+  .logoUl {
+    display: none;
+  }
+  .contenedorShop {
+    display: grid;
+    background-color: #FFFFFA;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedorCompras, .contenedorAyuda {
+    display: grid;
+    width: 80%;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+  }
+  .contenedorCarrito .botonCompras {
+    height: 70px;
+    width: 50vw;
+    font-size: 70%;
+  }
+  .contenedorAyuda {
+    width: 70vw;
+  }
+  .positionAbsolute a {
+    font-size: 0.7rem;
+    width: 100%;
+  }
+  .usuarioStyle {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+  }
+  input.inicioSesion {
+    display: grid;
+    width: 100%;
+    justify-items: center;
+  }
+  .olvidarContraseña {
+    display: contents;
+    justify-content: center;
+  }
+  .crearCuenta {
+    display: contents;
+    justify-content: center;
+  }
+  footer .wrapper .contacto li {
+    width: 20%;
+    justify-items: center;
+  }
+  .block {
+    display: block;
+  }
+  .faqStyle .botonSuscribirse {
+    font-size: 1rem;
+    width: 50vw;
+    margin: 10px auto;
+    height: 50px;
+  }
+  .faqStyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .faqStyle .style {
+    width: 100%;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header label {
+    display: block;
+    position: relative;
+    right: 25px;
+  }
+  header label img {
+    width: 50px;
+  }
+  header #btnMenu:checked ~ .menu {
+    visibility: visible;
+    opacity: 1;
+    z-index: 999;
+  }
+  header .menu {
+    position: absolute;
+    top: 102px;
+    background-color: #000103;
+    width: 100%;
+    visibility: hidden;
+    transition: visibility 1s, opacity 1s ease;
+    opacity: 0;
+    border: 1px #515052;
+    margin: 5px;
+  }
+  header .logoMenu {
+    display: block;
+    width: 100px;
+    margin-left: 25px;
+  }
+  header img {
+    display: block;
+    width: 100px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
